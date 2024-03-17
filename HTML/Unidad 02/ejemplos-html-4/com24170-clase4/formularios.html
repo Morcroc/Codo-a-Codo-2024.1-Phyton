@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Clase 4 HTML - Formularios</h1>
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre: *</label>
+            <input type="text" name="nombre" id="nombre" required size="10" maxlength="12">
+
+            <label for="apellido">Apellido: *</label>
+            <input type="text" name="apellido" id="apellido" required size="15" placeholder="Ingrese su apellido...">
+
+            <label for="dni">DNI:</label>
+            <input type="number" name="dni" id="dni" value="1234">
+
+            <label for="tramite">Nro Trámite:</label>
+            <input type="password" name="tramite" id="tramite">
+            <br><br>
+
+            <label for="fecnac">Fecha de nacimiento:</label>
+            <input type="date" name="fecnac" id="fecnac" value="2000-02-01">
+
+            <label for="correo">E-Mail:</label>
+            <input type="email" name="correo" id="correo">
+
+            <label for="adjunto">Adjuntar foto:</label>
+            <input type="file" name="adjunto" id="adjunto">
+            <br><br>
+
+            <label for="color_control">Color favorito:</label>
+            <input type="color" name="color_control" id="color_control">
+
+            <label for="hijos">Cantidad de hijos (min 0, max 10):</label>
+            <input type="number" name="hijos" id="hijos" min="0" max="10">
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos para la inscripción</legend>
+            <label for="turno">Seleccione un turno de preferencia:</label><br>
+            <select name="turno" id="turno">
+                <option value="1">Mañana</option>
+                <option value="2">Tarde</option>
+                <option value="3" selected>Vespertino</option>
+                <option value="4">Noche</option>
+            </select>
+            <br>
+            <label for="op">Conocimientos previos:</label>
+            <input type="checkbox" name="op" id="op" value="1" checked>HTML
+            <input type="checkbox" name="op" id="op" value="2">CSS
+            <input type="checkbox" name="op" id="op" value="3">JS
+            <br><br>
+            <label for="rb">Estoy interesado en...</label>
+            <input type="radio" name="rb" id="rb" value="1">Full Stack - Python
+            <input type="radio" name="rb" id="rb" value="2">Full Stack - JAVA
+            <input type="radio" name="rb" id="rb" value="3">Full Stack - PHP
+            <input type="radio" name="rb" id="rb" value="4">Diseño UX/UI
+            <br><br>
+        </fieldset>
+        <br>
+        <label for="comentarios">Escriba su consulta:</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escriba su consulta..."></textarea>
+
+        <p>* campo requerido</p>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+</html>

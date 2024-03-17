@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Clase 4 HTML - Formularios</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre: *</label>
+            <input type="text" name="nombre" id="nombre" required size="15" maxlength="20">
+
+            <label for="apellido">Apellido: *</label>
+            <input type="text" name="apellido" id="apellido" required size="15" maxlength="20"
+                placeholder="Ingresar apellido">
+
+            <label for="dni">DNI:</label>
+            <input type="number" name="dni" id="dni">
+
+            <label for="tramite">N° de trámite:</label>
+            <input type="password" name="tramite" id="tramite">
+            <br>
+            <label for="nac">Fecha de nacimiento:</label>
+            <input type="date" name="nac" id="nac" value="01-02-2000">
+
+            <label for="mail">E-Mail:</label>
+            <input type="email" name="mail" id="mail">
+
+            <label for="foto">Adjuntar foto</label>
+            <input type="file" name="foto" id="foto">
+
+            <br><br>
+            <label for="color">Color favorito:</label>
+            <input type="color" name="color" id="color">
+
+            <label for="perros">Cantidad de perros (min 0, max 10)</label>
+            <input type="number" name="perros" id="perros" min="0" max="10">
+
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos para la inscripción</legend>
+            <label for="turno">Seleccione un turno</label>
+            <select name="turno" id="turno" multiple>
+                <option value="1">Mañana</option>
+                <option value="2" selected>Tarde</option>
+                <option value="3">Vespertino</option>
+                <option value="4">Noche</option>
+            </select>
+            <br><br>
+            <label for="op">Conocimientos previos</label>
+            <input type="checkbox" name="op" id="op" value="1" checked>HTML
+            <input type="checkbox" name="op" id="op" value="2">CSS
+            <input type="checkbox" name="op" id="op" value="3">JavaScript
+            <br><br>
+            <label for="rb">Estoy interesada/o en:</label>
+            <input type="radio" name="rb" id="rb" value="1"> Full Stack - Python
+            <input type="radio" name="rb" id="rb" value="2"> Full Stack - Java
+            <input type="radio" name="rb" id="rb" value="3"> Full Stack - PHP
+            <input type="radio" name="rb" id="rb" value="4"> Diseño UX/UI
+        </fieldset>
+        <br>
+        <label for="comentarios">Escriba su consulta</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escriba su consulta..."></textarea>
+
+        <p>* campo requerido</p>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar formulario">
+    </form>
+</body>
+
+</html>

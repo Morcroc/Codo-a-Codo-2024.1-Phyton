@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        * {
+            font-family: Verdana;
+        }
+
+        h1 {
+            color: blue;
+            border-bottom: 1px solid blue;
+            background-color: lightblue;
+            padding: 5px;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <table> <!-- table: contenedor principal  -->
+        <tr> <!-- tr: representa una fila de la tabla -->
+            <th>Id</th> <!-- th: representa a una celda de encabezado en una tabla -->
+            <th>Nombre</th>
+        </tr>
+        <tr>
+            <td>1</td> <!-- td: representa a una celda de datos -->
+            <td>Juan Pablo</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Laura</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Agustina</td>
+        </tr>
+    </table>
+    <h2>Atributo colspan</h2>
+    <table>
+        <tr>
+            <td colspan="3">Listado de alumnos</td>
+        </tr> 
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Dias de cursada</th>
+        </tr>
+        <tr>
+            <td>1</td> <!-- td: representa a una celda de datos -->
+            <td>Juan Pablo</td>
+            <td>Martes</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Laura</td>
+            <td>Martes</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Agustina</td>
+            <td>Jueves</td>
+        </tr>
+    </table>
+    <h2>Atributo rowspan</h2>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Dias de cursada</th>
+        </tr>
+        <tr>
+            <td>1</td> <!-- td: representa a una celda de datos -->
+            <td>Juan Pablo</td>
+            <td rowspan="2">Martes</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Laura</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Agustina</td>
+            <td>Jueves</td>
+        </tr>
+    </table>
+    <h2>Uso de atributos colspan y rowspan en conjunto *</h2>
+    <table>
+        <tr>
+            <th colspan="6">Horario del colegio</th>
+        </tr>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>8:00 - 8:45</td>
+            <td rowspan="2">Matemáticas</td>
+            <td>Arte</td>
+        </tr>
+        <tr>
+            <td>8:45 - 9:30</td>
+            <td>Biología</td>
+        </tr>
+        <tr>
+            <td>9:30 - 9:45</td>
+            <td colspan="6">Recreo</td>
+        </tr>
+        <tr>
+            <td>9:45 - 10:30</td>
+            <td rowspan="2">Física</td>
+            <td rowspan="2">Historia</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:15</td>
+        </tr>
+        <tr>
+            <td>11:15 - 11:30</td>
+            <td colspan="6">Recreo</td>
+        </tr>
+        <tr>
+            <td>11:30 - 12:15</td>
+            <td rowspan="2">Historia</td>
+            <td>Matemáticas</td>
+        </tr>
+        <tr>
+            <td>12:15 - 13:00</td>
+        </tr>
+    </table>
+    <p>* A modo de práctica, puedes completar el resto de los días</p>
+</body>
+
+</html>
